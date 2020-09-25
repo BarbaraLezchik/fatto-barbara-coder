@@ -1,0 +1,35 @@
+.cuerpo-sobre-nos{
+    position: relative;
+    top: 59px;
+
+    .container{
+        background-color: $crema-rosa-claro-fatto;
+    }
+
+    .imagen-nosotros{
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+    }
+
+}
+
+.primer-parrafo-nosotros{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+
+    p{
+        padding: 10px;
+    }
+}
+
+.segundo-parrafo-nosotros{
+    padding: 0px 0px 80px 40px;
+}

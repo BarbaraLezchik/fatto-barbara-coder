@@ -1,0 +1,105 @@
+.titulos-secciones-home{
+    font-family: Overpass; 
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #77001E;
+    opacity: 0.2;
+}
+
+#portada{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    top: 59px;
+
+    .caja-traslucida{
+        position: absolute;
+        z-index: 2;
+        width: 35%;
+  
+        left: 10%;
+      
+        background: #fffbe957;
+        text-align: right;
+        padding: 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        
+        
+        p1{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 40px;
+            margin: 40px 0px;
+            color: $marron-fatto;
+        }
+
+
+        .btn_boton-pedido{
+            color: #FFFBE9;
+            background-color: #77001E;
+            z-index: 2;
+            display: flex;
+            padding: 15px;
+            width: fit-content;
+            border-radius: 20px;
+        
+            :hover {
+                display: none;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+#productos-home{
+    position: relative;
+    background-color: $crema-marron-claro-fatto;
+    .home-boxes{
+        height: 100%;
+        background-color: $crema-fatto;
+    }
+}
+
+.columnas-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h3{
+        margin-top: 40px;
+    }
+    p{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.imagen-redonda2{
+    z-index: 2;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #FFFBE9;
+    box-shadow: outset 2px -2px 6px rgba(0, 0, 0, 0.1), inset 1px 1px 6px rgba(70, 54, 39, 0.25);
+    margin-bottom: 10px;
+}

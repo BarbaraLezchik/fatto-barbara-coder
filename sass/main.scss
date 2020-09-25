@@ -1,0 +1,58 @@
+$rojo-fatto: #77001E;
+$crema-fatto: #FFFBE9;
+$verde-fatto: #054E2E;
+$marron-fatto: #392618;
+$crema-rosa-fatto: #EBD6CA;
+$crema-marron-fatto: #EBDDC3;
+$crema-rosa-claro-fatto: #F2E4D7;
+$crema-marron-claro-fatto: #F4EBDA;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 85px;
+    line-height: 75px; 
+    color: $rojo-fatto;
+    margin: 0px, 0px, 45px, 0px; 
+}
+
+body{
+    display: inline-block;
+}
+
+.imagen-redonda{
+    z-index: 2;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #FFFBE9;
+    box-shadow: outset 2px -2px 6px rgba(0, 0, 0, 0.1), inset 1px 1px 6px rgba(70, 54, 39, 0.25);
+    margin-bottom: 10px;
+}
+
+.boton-agregar-carrito{
+    background-color: $rojo-fatto;
+    color: $crema-fatto;
+    padding: 8px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 10pt;
+}
+
+@import "_nav-bar.scss";
+@import "_home.scss";
+@import "_productos.scss";
+@import "_footer.scss";
+@import "_contacto.scss";
+@import "_boxes.scss";
+@import "_sobre-nosotros.scss";

@@ -1,0 +1,64 @@
+.open {
+   display: none;
+}
+
+
+ header{
+     position: fixed;
+     z-index: 3;
+     width: 100%;
+ }
+
+#nav{
+    background: $crema-fatto;
+    height: 59px;
+    top: 0px;
+
+    .close {
+        display: none;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+            display: inline-block;
+            height: 59px;
+            padding: 10px;
+            margin: 10px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.02em;
+            a{
+                color: #77001e;
+                text-decoration: none;
+            }  
+        }
+
+        img {
+            height: 50px;
+            width: auto;
+            margin-top: 5px;
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: 50px;
+        li a {
+            display: none;
+        }
+
+        
+    }
+    header nav ul div img{
+        height: 30px;
+    }
+}

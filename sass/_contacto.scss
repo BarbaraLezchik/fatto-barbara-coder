@@ -1,0 +1,100 @@
+.cuerpo-contacto{
+    position: relative;
+    top: 59px;
+}
+
+
+.redes-contacto{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    .iconos-contacto{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        
+        border: 20px;
+
+        p{
+            padding: 15px;
+            color: $rojo-fatto;
+        }
+
+        img{
+            width: 90px;
+            height: auto;
+        }
+    }
+}
+
+.fondo-form-contacto{
+    position: absolute;
+    top: 0px;
+    background-color: $crema-rosa-fatto;
+    z-index: 2;
+
+    p{
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    p{
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 50px; 
+        text-align: right;
+        color: $crema-fatto
+    }
+
+    .formulario{
+        div{
+            padding: 10px;
+        }
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: $rojo-fatto;
+        border-bottom-width: 1px;
+    }
+
+    .boton-enviar{
+        background-color: $rojo-fatto;
+        color: $crema-fatto;
+        border-style: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+
+    textarea{
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: $rojo-fatto;
+        border-bottom-width: 1px;
+        resize: none;
+    }
+
+}
+
+.envios-caba{
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 35px;
+    color: $marron-fatto;
+}
