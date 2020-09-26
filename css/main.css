@@ -57,11 +57,13 @@ header {
 }
 #nav .row {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
 }
 #nav .row li {
   display: inline-block;
+  flex-wrap: nowrap;
   height: 59px;
   padding: 10px;
   margin: 10px;
@@ -189,6 +191,36 @@ header {
   margin-bottom: 10px;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  #portada .caja-traslucida h1 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+  #portada .caja-traslucida p1 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+    margin: 29px 0px;
+  }
+  #portada .caja-traslucida .btn_boton-pedido {
+    padding: 10px;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  #portada .caja-traslucida h1 {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  #portada .caja-traslucida p1 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 900;
+    margin: 20px 0px;
+  }
+  #portada .caja-traslucida .btn_boton-pedido {
+    padding: 10px;
+  }
+}
 #nav-productos {
   background: #FFFBE9;
   position: fixed;
@@ -363,6 +395,7 @@ header {
 
 .linea-productos {
   display: flex;
+  flex-wrap: nowrap;
   width: 100%;
 }
 

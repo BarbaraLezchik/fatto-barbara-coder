@@ -19,10 +19,12 @@
     }
     .row {
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-between;
         li {
             display: inline-block;
+            flex-wrap: nowrap;
             height: 59px;
             padding: 10px;
             margin: 10px;
