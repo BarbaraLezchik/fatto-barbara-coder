@@ -1,6 +1,6 @@
 .cuerpo-contacto{
-    position: relative;
-    top: 59px;
+   
+    padding-top: 59px;
 }
 
 
@@ -31,7 +31,7 @@
 
 .fondo-form-contacto{
     position: absolute;
-    top: 0px;
+    top: 59px;
     background-color: $crema-rosa-fatto;
     z-index: 2;
 
@@ -94,7 +94,7 @@
 
 .envios-caba{
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
-    color: $marron-fatto;
+    color: $rojo-fatto;
 }

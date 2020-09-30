@@ -52,6 +52,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .open{
+        display: flex;
+        margin-left: 50px;
+    }
     nav {
         height: 50px;
         li a {
@@ -62,5 +67,17 @@
     }
     header nav ul div img{
         height: 30px;
+    }
+
+    #nav{
+        .enlaces-nav-bar{
+            display: none;
+        }
+        .row{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-items: space-between;
+
+        }
     }
 }

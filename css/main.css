@@ -86,6 +86,11 @@ header {
 }
 
 @media (max-width: 768px) {
+  .open {
+    display: flex;
+    margin-left: 50px;
+  }
+
   nav {
     height: 50px;
   }
@@ -95,6 +100,15 @@ header {
 
   header nav ul div img {
     height: 30px;
+  }
+
+  #nav .enlaces-nav-bar {
+    display: none;
+  }
+  #nav .row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: space-between;
   }
 }
 .titulos-secciones-home {
@@ -125,7 +139,7 @@ header {
   padding: 34px;
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  align-items: flex-end;
 }
 #portada .caja-traslucida p1 {
   font-style: normal;
@@ -206,19 +220,127 @@ header {
     padding: 10px;
   }
 }
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 550px) and (max-width: 768px) {
+  #portada {
+    width: 100vw;
+  }
   #portada .caja-traslucida h1 {
     font-size: 50px;
     line-height: 40px;
   }
   #portada .caja-traslucida p1 {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 15px;
     font-weight: 900;
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
   #portada .caja-traslucida .btn_boton-pedido {
     padding: 10px;
+    font-size: 10pt;
+  }
+
+  #productos-home {
+    width: 100vw;
+  }
+
+  .imagen-redonda2 {
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #FFFBE9;
+    box-shadow: outset 2px -2px 6px rgba(0, 0, 0, 0.1), inset 1px 1px 6px rgba(70, 54, 39, 0.25);
+    margin-bottom: 10px;
+  }
+
+  .columnas-home {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .columnas-home h3 {
+    margin-top: 20px;
+    font-size: 40pt;
+  }
+  .columnas-home p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 549px) {
+  #nav {
+    width: 100vw;
+  }
+
+  #carouselExampleControls {
+    height: 40vh;
+  }
+
+  #portada .carousel-item {
+    height: 40vh;
+    width: auto;
+  }
+  #portada .carousel-item img {
+    height: 100%;
+    width: 100%;
+  }
+  #portada .caja-traslucida {
+    padding: 10px;
+    width: 50%;
+  }
+  #portada .caja-traslucida h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #portada .caja-traslucida p1 {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 900;
+    margin: 5px 0px;
+  }
+  #portada .caja-traslucida .btn_boton-pedido {
+    padding: 10px;
+    font-size: 8pt;
+  }
+
+  #productos-home {
+    width: 100vw;
+  }
+
+  .imagen-redonda2 {
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #FFFBE9;
+    box-shadow: outset 2px -2px 6px rgba(0, 0, 0, 0.1), inset 1px 1px 6px rgba(70, 54, 39, 0.25);
+    margin-bottom: 5px;
+  }
+
+  .columnas-home {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .columnas-home h3 {
+    margin-top: 10px;
+    font-size: 40pt;
+  }
+  .columnas-home p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 #nav-productos {
@@ -284,51 +406,66 @@ header {
   margin-top: 135px;
 }
 
-.fondo-bordo-pastas {
+#productos-titulo-pastas {
+  position: relative;
+}
+#productos-titulo-pastas .fondo-bordo-pastas {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   left: 0;
-  top: 108px;
+  top: 0px;
   width: 45%;
   height: 120px;
   background-color: #EBD6CA;
 }
 
-.fondo-bordo-pastas2 {
+#productos-titulo-salsas {
+  position: relative;
+}
+#productos-titulo-salsas .fondo-bordo-pastas2 {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   left: 0;
-  top: 510px;
+  top: 0px;
   width: 45%;
   height: 120px;
   background-color: #EBDDC3;
 }
 
-.fondo-bordo-pastas3 {
+#productos-titulo-pizzas {
+  position: relative;
+}
+#productos-titulo-pizzas .fondo-bordo-pastas3 {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   left: 0;
-  top: 950px;
+  top: 0px;
   width: 45%;
   height: 120px;
   background-color: #EBD6CA;
 }
 
-.fondo-bordo-pastas4 {
+#productos-titulo-quesos {
+  position: relative;
+}
+#productos-titulo-quesos .fondo-bordo-pastas4 {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   left: 0;
-  top: 1390px;
+  top: 0px;
   width: 45%;
   height: 120px;
   background-color: #EBDDC3;
 }
 
-.fondo-bordo-pastas5 {
+#productos-titulo-bebidas {
+  position: relative;
+}
+#productos-titulo-bebidas .fondo-bordo-pastas5 {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   left: 0;
-  top: 1790px;
+  top: 0px;
   width: 45%;
   height: 120px;
   background-color: #EBD6CA;
@@ -338,13 +475,14 @@ header {
   z-index: 2;
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   justify-content: flex-end;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 .titulo-productos h1 {
   font-size: 80px;
   font-weight: 400;
-  line-height: 24px;
+  /*line-height: 24px;*/
   letter-spacing: 0.02em;
   color: #FFFBE9;
 }
@@ -486,9 +624,17 @@ footer .ul {
   align-items: baseline;
 }
 
+@media (max-width: 549px) {
+  #ultimo-renglon-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+  }
+}
 .cuerpo-contacto {
-  position: relative;
-  top: 59px;
+  padding-top: 59px;
 }
 
 .redes-contacto {
@@ -513,7 +659,7 @@ footer .ul {
 
 .fondo-form-contacto {
   position: absolute;
-  top: 0px;
+  top: 59px;
   background-color: #EBD6CA;
   z-index: 2;
 }
@@ -568,9 +714,9 @@ footer .ul {
 
 .envios-caba {
   font-weight: normal;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 35px;
-  color: #392618;
+  color: #77001E;
 }
 
 #cuerpo {
@@ -601,6 +747,8 @@ footer .ul {
   line-height: 40px;
   text-align: right;
   color: #FFFBE9;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
 .box .titulo-box p {
   margin-left: 20px;
@@ -617,7 +765,7 @@ footer .ul {
   padding: 2px 10px;
   width: 100%;
   align-items: flex-end;
-  align-content: space-between;
+  justify-content: space-between;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -641,8 +789,7 @@ footer .ul {
 }
 
 .cuerpo-sobre-nos {
-  position: relative;
-  top: 59px;
+  padding-top: 59px;
 }
 .cuerpo-sobre-nos .container {
   background-color: #F2E4D7;
@@ -651,7 +798,7 @@ footer .ul {
   width: 40vw;
   height: auto;
   position: absolute;
-  top: 40px;
+  top: 100px;
   right: 0px;
 }
 

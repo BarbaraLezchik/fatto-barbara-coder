@@ -74,55 +74,79 @@
     margin-top: 135px;
 }
 
-.fondo-bordo-pastas{
+#productos-titulo-pastas{
+    position: relative;
+
+    .fondo-bordo-pastas{
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0px;
+        width: 45%;
+        height: 120px;
+        background-color: $crema-rosa-fatto;
+    }
+}
+
+#productos-titulo-salsas{
+    position: relative;
+    .fondo-bordo-pastas2{
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0px;
+        width: 45%;
+        height: 120px;
+        background-color: $crema-marron-fatto;
+    }
+}
+
+
+#productos-titulo-pizzas{
+    position: relative;
+
+    .fondo-bordo-pastas3{
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     left: 0;
-    top: 108px;
+    top: 0px;
     width: 45%;
     height: 120px;
     background-color: $crema-rosa-fatto;
+    }
 }
 
-.fondo-bordo-pastas2{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 510px;
-    width: 45%;
-    height: 120px;
-    background-color: $crema-marron-fatto;
+
+#productos-titulo-quesos{
+    position: relative;
+
+    .fondo-bordo-pastas4{
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0px;
+        width: 45%;
+        height: 120px;
+        background-color: $crema-marron-fatto;
+    }
+    
 }
 
-.fondo-bordo-pastas3{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 950px;
-    width: 45%;
-    height: 120px;
-    background-color: $crema-rosa-fatto;
+
+#productos-titulo-bebidas{
+    position: relative;
+    .fondo-bordo-pastas5{
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0px;
+        width: 45%;
+        height: 120px;
+        background-color: $crema-rosa-fatto;
+    }
+
 }
 
-.fondo-bordo-pastas4{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 1390px;
-    width: 45%;
-    height: 120px;
-    background-color: $crema-marron-fatto;
-}
-
-.fondo-bordo-pastas5{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 1790px;
-    width: 45%;
-    height: 120px;
-    background-color: $crema-rosa-fatto;
-}
 
 
 
@@ -130,13 +154,14 @@
     z-index: 2;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     justify-content: flex-end;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 
     h1{
         font-size: 80px;
         font-weight: 400;
-        line-height: 24px;
+        /*line-height: 24px;*/
         letter-spacing: 0.02em;
         color: $crema-fatto;
     }

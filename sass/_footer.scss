@@ -79,3 +79,13 @@ footer .ul{
     align-items: baseline;
 
 }
+
+@media (max-width: 549px){
+    #ultimo-renglon-footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+    }
+}
