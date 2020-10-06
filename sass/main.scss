@@ -15,6 +15,14 @@ $crema-marron-claro-fatto: #F4EBDA;
     font-family: 'Overpass', sans-serif;
 }
 
+@media (min-width: 768px){
+
+    #nav-mobile{
+        display: none;
+    }
+    
+}
+
 
 
 h1{
@@ -56,3 +64,4 @@ body{
 @import "_contacto.scss";
 @import "_boxes.scss";
 @import "_sobre-nosotros.scss";
+@import "nav-mobile.scss";
