@@ -49,7 +49,7 @@ body {
 header {
   position: fixed;
   z-index: 3;
-  width: 100%;
+  width: 100vw;
 }
 
 #nav {
@@ -354,11 +354,11 @@ header {
   height: 50px;
   top: 59px;
   z-index: 3;
-  width: 100%;
+  width: 100vw;
 }
 #nav-productos ul {
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   position: relative;
 }
@@ -539,7 +539,7 @@ header {
 .linea-productos {
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 100vw;
 }
 
 .pastas {
@@ -550,6 +550,125 @@ header {
   animation-duration: 1s;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .titulo-productos p {
+    font-size: 16px;
+  }
+
+  .productos-pastas p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .titulo-productos h1 {
+    font-size: 60px;
+  }
+  .titulo-productos p {
+    font-size: 13px;
+  }
+
+  .productos-pastas p {
+    font-size: 10px;
+  }
+
+  .linea-productos {
+    margin-left: 20px;
+    overflow-x: scroll;
+    width: 100vw;
+  }
+}
+@media (max-width: 549px) {
+  #nav-productos {
+    width: 100vw;
+  }
+  #nav-productos ul {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+  }
+  #nav-productos ul .nav-vinos ::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30%;
+    background: #77001E;
+    position: absolute;
+    top: 8px;
+    left: -5px;
+  }
+  #nav-productos ul li {
+    padding: 2px;
+    margin: 10px 5px;
+  }
+  #nav-productos ul li ::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30%;
+    background: #77001E;
+    position: absolute;
+    top: 8px;
+    left: -5px;
+  }
+  #nav-productos ul li a {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .titulo-productos h1 {
+    margin-left: 15px;
+    font-size: 50px;
+  }
+  .titulo-productos p {
+    font-size: 15px;
+  }
+
+  .productos-pastas h3 {
+    font-size: 20px;
+  }
+  .productos-pastas p {
+    font-size: 10px;
+  }
+
+  .linea-productos {
+    margin-left: 15px;
+    overflow-x: scroll;
+    width: 100vw;
+  }
+
+  #productos-titulo-bebidas .fondo-bordo-pastas5 {
+    width: 95%;
+  }
+
+  #productos-titulo-pastas .fondo-bordo-pastas {
+    width: 95%;
+  }
+
+  #productos-titulo-salsas .fondo-bordo-pastas2 {
+    width: 95%;
+  }
+
+  #productos-titulo-pizzas .fondo-bordo-pastas3 {
+    width: 95%;
+  }
+
+  #productos-titulo-quesos .fondo-bordo-pastas4 {
+    width: 95%;
+  }
+}
+@media (max-width: 320px) {
+  #nav-productos ul li a {
+    font-size: 12px;
+  }
+
+  .productos-pastas h3 {
+    font-size: 12px;
+  }
+  .productos-pastas p {
+    font-size: 8px;
+  }
+}
 footer {
   background-color: #dfcfa5;
   width: 100vw;
@@ -834,7 +953,7 @@ footer .ul {
     right: -100%;
     width: 280px;
     height: 100vh;
-    z-index: 1;
+    z-index: 5;
     text-align: right;
     justify-content: center;
     opacity: 0;
@@ -865,5 +984,6 @@ footer .ul {
   #nav-mobile:target {
     right: 0;
     opacity: 1;
+    z-index: 4;
   }
 }
