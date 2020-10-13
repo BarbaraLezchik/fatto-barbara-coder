@@ -81,11 +81,36 @@ footer .ul{
 }
 
 @media (max-width: 549px){
+
+    .primer-renglon{
+        
+         align-items: center;
+
+    }
     #ultimo-renglon-footer{
         display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: center;
         justify-items: center;
+
+        p{
+            padding: 0px 20px;
+        }
+    }
+
+    #contacto-footer{
+        width: 90%;
+        justify-content: center;
+
+        img{
+            margin: 10px;
+        }
+    }
+
+    .direccion-footer{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
     }
 }

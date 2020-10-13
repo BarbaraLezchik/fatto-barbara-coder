@@ -98,3 +98,100 @@
     line-height: 35px;
     color: $rojo-fatto;
 }
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .redes-contacto{
+        padding: 10px;
+        margin: 10px;
+    
+        .iconos-contacto{
+          border: 10px;
+    
+            p{
+                font-size: 14px;
+                padding: 25px 5px;
+                color: $rojo-fatto;
+            }
+    
+            img{
+                width: 60px;
+                height: auto;
+            }
+        }
+    }
+
+    .form-contacto{
+        p{
+            font-size: 35px;
+            line-height: 40px; 
+   
+        }
+    
+        .formulario{
+            div{
+                padding: 5px;
+            }
+        }
+    }
+
+    .mapa-envios{
+        img{
+            width: 80vw;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .fondo-form-contacto{
+        position: relative;
+        top: 0px;
+        background-color: $crema-rosa-fatto;
+        z-index: 2;
+    
+        p{
+            padding: 10px;
+            margin: 0px;
+        }
+    }
+    .redes-contacto{
+        padding: 10px;
+        margin: 0px 10px;
+    
+        .iconos-contacto{
+          border: 10px;
+    
+            p{
+                font-size: 14px;
+                padding: 25px 5px;
+                color: $rojo-fatto;
+            }
+    
+            img{
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+
+    .form-contacto{
+        p{
+            font-size: 35px;
+            line-height: 40px; 
+   
+        }
+    
+        .formulario{
+            div{
+                padding: 5px;
+            }
+        }
+    }
+
+    .mapa-envios{
+        img{
+            width: 90vw;
+            height: auto;
+        }
+    }
+}

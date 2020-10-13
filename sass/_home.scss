@@ -2,7 +2,7 @@
     font-family: Overpass; 
     font-style: normal;
     font-weight: 800;
-    font-size: 80px;
+    font-size: 6vw;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -20,23 +20,26 @@
         position: absolute;
         z-index: 2;
         width: 35%;
-  
+        height: 100%;
         left: 10%;
       
         background: #fffbe957;
         text-align: right;
-        padding: 34px;
+        padding: 2%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         
-        
+        h1{
+            font-size: 7vw;
+            line-height: 6vw;
+        }
         p1{
             font-style: normal;
             font-weight: 600;
             font-size: 28px;
             line-height: 40px;
-            margin: 40px 0px;
+            margin: 4% 0px;
             color: $marron-fatto;
         }
 
@@ -46,7 +49,7 @@
             background-color: #77001E;
             z-index: 2;
             display: flex;
-            padding: 15px;
+            padding: 1vw;
             width: fit-content;
             border-radius: 20px;
         
@@ -58,9 +61,6 @@
     }
 
 }
-
-
-
 
 
 #productos-home{
@@ -109,16 +109,12 @@
     #portada{
         .caja-traslucida{
 
-            h1{
-                font-size: 70px;
-                line-height: 50px;
-            }
 
             p1 {
-                font-size: 24px;
-                line-height: 24px;
+                font-size: 20px;
+                line-height: 20px;
                 font-weight: 900;
-                margin: 29px 0px;
+                margin: 10px 0px;
             }
 
             .btn_boton-pedido{
@@ -134,11 +130,6 @@
 
         width: 100vw;
         .caja-traslucida{
-
-            h1{
-                font-size: 50px;
-                line-height: 40px;
-            }
 
             p1 {
                 font-size: 15px;
@@ -215,13 +206,7 @@
 
              .caja-traslucida{
 
-                padding: 10px;
-                width: 50%;
 
-            h1{
-                font-size: 30px;
-                line-height: 30px;
-            }
 
             p1 {
                 font-size: 10px;
@@ -231,8 +216,8 @@
             }
 
             .btn_boton-pedido{
-                padding: 10px;
-                font-size: 8pt;
+                padding: 5px;
+                font-size: 6pt;
             }
         }
     }  

@@ -5,7 +5,7 @@
   font-family: "Overpass", sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #nav-mobile {
     display: none;
   }
@@ -90,7 +90,7 @@ header {
   margin-top: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .open {
     display: flex;
     margin-left: 50px;
@@ -120,7 +120,7 @@ header {
   font-family: Overpass;
   font-style: normal;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 6vw;
   line-height: 36px;
   text-align: center;
   letter-spacing: 0.05em;
@@ -138,20 +138,25 @@ header {
   position: absolute;
   z-index: 2;
   width: 35%;
+  height: 100%;
   left: 10%;
   background: #fffbe957;
   text-align: right;
-  padding: 34px;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+#portada .caja-traslucida h1 {
+  font-size: 7vw;
+  line-height: 6vw;
 }
 #portada .caja-traslucida p1 {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 40px;
-  margin: 40px 0px;
+  margin: 4% 0px;
   color: #392618;
 }
 #portada .caja-traslucida .btn_boton-pedido {
@@ -159,7 +164,7 @@ header {
   background-color: #77001E;
   z-index: 2;
   display: flex;
-  padding: 15px;
+  padding: 1vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -211,15 +216,11 @@ header {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  #portada .caja-traslucida h1 {
-    font-size: 70px;
-    line-height: 50px;
-  }
   #portada .caja-traslucida p1 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 900;
-    margin: 29px 0px;
+    margin: 10px 0px;
   }
   #portada .caja-traslucida .btn_boton-pedido {
     padding: 10px;
@@ -228,10 +229,6 @@ header {
 @media (min-width: 550px) and (max-width: 768px) {
   #portada {
     width: 100vw;
-  }
-  #portada .caja-traslucida h1 {
-    font-size: 50px;
-    line-height: 40px;
   }
   #portada .caja-traslucida p1 {
     font-size: 15px;
@@ -295,14 +292,6 @@ header {
     height: 100%;
     width: 100%;
   }
-  #portada .caja-traslucida {
-    padding: 10px;
-    width: 50%;
-  }
-  #portada .caja-traslucida h1 {
-    font-size: 30px;
-    line-height: 30px;
-  }
   #portada .caja-traslucida p1 {
     font-size: 10px;
     line-height: 10px;
@@ -310,8 +299,8 @@ header {
     margin: 5px 0px;
   }
   #portada .caja-traslucida .btn_boton-pedido {
-    padding: 10px;
-    font-size: 8pt;
+    padding: 5px;
+    font-size: 6pt;
   }
 
   #productos-home {
@@ -749,12 +738,33 @@ footer .ul {
 }
 
 @media (max-width: 549px) {
+  .primer-renglon {
+    align-items: center;
+  }
+
   #ultimo-renglon-footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     justify-items: center;
+  }
+  #ultimo-renglon-footer p {
+    padding: 0px 20px;
+  }
+
+  #contacto-footer {
+    width: 90%;
+    justify-content: center;
+  }
+  #contacto-footer img {
+    margin: 10px;
+  }
+
+  .direccion-footer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
   }
 }
 .cuerpo-contacto {
@@ -843,6 +853,79 @@ footer .ul {
   color: #77001E;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .redes-contacto {
+    padding: 10px;
+    margin: 10px;
+  }
+  .redes-contacto .iconos-contacto {
+    border: 10px;
+  }
+  .redes-contacto .iconos-contacto p {
+    font-size: 14px;
+    padding: 25px 5px;
+    color: #77001E;
+  }
+  .redes-contacto .iconos-contacto img {
+    width: 60px;
+    height: auto;
+  }
+
+  .form-contacto p {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .form-contacto .formulario div {
+    padding: 5px;
+  }
+
+  .mapa-envios img {
+    width: 80vw;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .fondo-form-contacto {
+    position: relative;
+    top: 0px;
+    background-color: #EBD6CA;
+    z-index: 2;
+  }
+  .fondo-form-contacto p {
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .redes-contacto {
+    padding: 10px;
+    margin: 0px 10px;
+  }
+  .redes-contacto .iconos-contacto {
+    border: 10px;
+  }
+  .redes-contacto .iconos-contacto p {
+    font-size: 14px;
+    padding: 25px 5px;
+    color: #77001E;
+  }
+  .redes-contacto .iconos-contacto img {
+    width: 50px;
+    height: auto;
+  }
+
+  .form-contacto p {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .form-contacto .formulario div {
+    padding: 5px;
+  }
+
+  .mapa-envios img {
+    width: 90vw;
+    height: auto;
+  }
+}
 #cuerpo {
   margin-top: 59px;
 }
@@ -1070,7 +1153,59 @@ footer .ul {
   padding: 0px 0px 80px 40px;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .imagen-nosotros {
+    width: 30vw;
+    height: auto;
+  }
+
+  .primer-parrafo-nosotros {
+    padding: 15px;
+    margin: 15px;
+  }
+  .primer-parrafo-nosotros p {
+    padding: 10px;
+  }
+
+  .segundo-parrafo-nosotros {
+    width: 90%;
+    padding: 0px 0px 80px 40px;
+  }
+}
 @media (max-width: 768px) {
+  .cuerpo-sobre-nos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cuerpo-sobre-nos .imagen-nosotros {
+    width: 80vw;
+    height: auto;
+    position: relative;
+    top: 0px;
+    align-items: center;
+  }
+  .cuerpo-sobre-nos .primer-parrafo-nosotros {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+  }
+  .cuerpo-sobre-nos .primer-parrafo-nosotros img {
+    width: 25%;
+    height: 25%;
+  }
+  .cuerpo-sobre-nos .primer-parrafo-nosotros p {
+    padding: 5px;
+  }
+  .cuerpo-sobre-nos .segundo-parrafo-nosotros {
+    padding: 0px 0px 50px 10px;
+  }
+}
+@media (max-width: 992px) {
   #nav-mobile {
     display: flex;
     flex-direction: column;

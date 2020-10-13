@@ -33,3 +33,65 @@
 .segundo-parrafo-nosotros{
     padding: 0px 0px 80px 40px;
 }
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .imagen-nosotros{
+        width: 30vw;
+        height: auto;
+    }
+
+    .primer-parrafo-nosotros{
+        padding: 15px;
+        margin: 15px;
+    
+        p{
+            padding: 10px;
+        }
+    }
+
+    .segundo-parrafo-nosotros{
+        width: 90%;
+        padding: 0px 0px 80px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cuerpo-sobre-nos{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .imagen-nosotros{
+            width: 80vw;
+            height: auto;
+            position: relative;
+            top: 0px;
+            align-items: center;
+            
+        }
+
+        .primer-parrafo-nosotros{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding: 5px;
+            margin: 5px;
+
+            img{
+                width: 25%;
+                height: 25%;
+               
+            }
+        
+            p{
+                padding: 5px;
+            }
+        }
+
+        .segundo-parrafo-nosotros{
+            padding: 0px 0px 50px 10px;
+        }
+    }
+}
